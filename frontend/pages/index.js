@@ -1,7 +1,7 @@
-import React from 'react'
-import Articles from '../components/articles'
-import Layout from '../components/layout'
-import { getArticles, getCategories } from '../lib/api'
+import React from "react";
+import Articles from "../components/articles";
+import Layout from "../components/layout";
+import { getArticles, getCategories } from "../lib/api";
 
 const Home = ({ articles, categories }) => {
   return (
@@ -13,16 +13,16 @@ const Home = ({ articles, categories }) => {
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 export async function getStaticProps() {
-  const articles = (await getArticles()) || []
-  const categories = (await getCategories()) || []
+  const articles = (await getArticles()) || [];
+  const categories = (await getCategories()) || [];
   return {
     props: { articles, categories },
     unstable_revalidate: 1,
-  }
+  };
 }
 
-export default Home
+export default Home;

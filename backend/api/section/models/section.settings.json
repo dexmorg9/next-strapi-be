@@ -18,6 +18,13 @@
     "page": {
       "model": "page",
       "via": "sections"
+    },
+    "classes": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "unique": true
     }
   }
 }
