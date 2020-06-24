@@ -17,8 +17,28 @@
       "enum": [
         "multiple",
         "textarea",
-        "simple"
+        "simple",
+        "radio",
+        "label"
       ]
+    },
+    "secondary": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "order": {
+      "type": "integer"
+    },
+    "classes": {
+      "type": "string"
+    },
+    "options": {
+      "collection": "option",
+      "via": "questions",
+      "dominant": true
     }
   }
 }

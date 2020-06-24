@@ -24,7 +24,10 @@
     },
     "order": {
       "type": "integer",
-      "unique": true
+      "unique": false
+    },
+    "questions": {
+      "collection": "question"
     }
   }
 }
