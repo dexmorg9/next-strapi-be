@@ -13,7 +13,7 @@
       "type": "string"
     },
     "sections": {
-      "via": "page",
+      "via": "pages",
       "collection": "section"
     }
   }

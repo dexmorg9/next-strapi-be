@@ -15,10 +15,6 @@
     "name": {
       "type": "string"
     },
-    "page": {
-      "model": "page",
-      "via": "sections"
-    },
     "classes": {
       "type": "string"
     },
@@ -28,6 +24,11 @@
     },
     "questions": {
       "collection": "question"
+    },
+    "pages": {
+      "collection": "page",
+      "via": "sections",
+      "dominant": true
     }
   }
 }
